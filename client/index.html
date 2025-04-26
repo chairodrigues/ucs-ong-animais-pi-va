@@ -4,93 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ONG de Adoção de Animais - Adote & Ame</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            margin-top: 1em;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .about, .animals, .contact {
-            margin-bottom: 40px;
-        }
-        .about h2, .animals h2, .contact h2 {
-            color: #4CAF50;
-        }
-        .animals {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .animal {
-            width: 30%;
-            text-align: center;
-            margin: 10px;
-            background-color: #fff;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-        }
-        .animal img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-        .form-contato {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        .form-contato input, .form-contato textarea {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .botao-enviar {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        .botao-enviar:hover {
-            background-color: #45a049;
-        }
-        footer {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-        @media (max-width: 768px) {
-            .animal {
-                width: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
 
@@ -100,9 +14,9 @@
 </header>
 
 <nav>
-    <a href="#about">Sobre Nós</a>
+    <a href="js/about.html">Sobre Nós</a>
     <a href="#animals">Animais para Adoção</a>
-    <a href="#contact">Contato</a>
+    <a href="js/contact.html">Contato</a>
 </nav>
 
 <div class="container">
@@ -115,50 +29,51 @@
     <!-- Seção Animais para Adoção -->
     <section id="animals" class="animals">
         <h2>🐾 Animais para Adoção</h2>
-        
+        <div > 
         <div class="animal">
-            <img src="cachorro.webp" alt="cachorro Rex">
+            <img src="images/cachorro.webp" alt="cachorro Rex">
             <h3>Rex</h3>
             <p>Idade: 4 meses</p>
         </div>
         
         <div class="animal">
-            <img src="gato-albino-scaled.webp" alt="Gato Mia">
+            <img src="images/gato-albino-scaled.webp" alt="Gato Mia">
             <h3>Mia</h3>
             <p>Idade: 7 meses</p>
         </div>
         
         <div class="animal">
-            <img src="cachorro2.jpg" alt="Cachorro Thor">
+            <img src="images/cachorro2.jpg" alt="Cachorro Thor">
             <h3>Thor</h3>
             <p>Idade: 9 meses</p>
         </div>
     
         <div class="animal">
-            <img src="gato-persa-branco.webp" alt="Gato Luna">
+            <img src="images/gato-persa-branco.webp" alt="Gato Luna">
             <h3>Luna</h3>
             <p>Idade: 6 meses</p>
         </div>
     
         <div class="animal">
-            <img src="cruzamento-de-pinscher-com-vira-lata-interna-2.jpg" alt="Cachorro Max">
+            <img src="images/cruzamento-de-pinscher-com-vira-lata-interna-2.jpg" alt="Cachorro Max">
             <h3>Max</h3>
             <p>Idade: 1 ano</p>
         </div>
     
         <div class="animal">
-            <img src="Vira-lata-caramelo.jpg" alt="Azus">
+            <img src="images/Vira-lata-caramelo.jpg" alt="Azus">
             <h3>Bolinha</h3>
             <p>Idade: 1 ano e meio</p>
+        </div>
         </div>
     </section>
 
     <!-- Seção Contato -->
-    <section id="contact" class="contact">
+    <section id="getGontact" class="getGontact">
         <h2>💌 Fale Conosco</h2>
         <p>Tem dúvidas ou quer adotar um amigo de quatro patas? Envie-nos uma mensagem! 🐾</p>
         
-        <form action="/enviar-contato" method="post" class="form-contato">
+        <form id="form-contato" class="form-contato">
             <label for="nome">🐶 Nome:</label>
             <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
         
@@ -171,7 +86,7 @@
             <label for="mensagem">📝 Mensagem:</label>
             <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..."></textarea>
         
-            <button type="submit" class="botao-enviar">📩 Enviar Mensagem</button>
+            <button type="button" id="enviar">📩 Enviar Mensagem</button>
         </form>
     </section>
 </div>
@@ -179,6 +94,11 @@
 <footer>
     <p>&copy; 2024 ONG de Adoção de Animais. Todos os direitos reservados.</p>
 </footer>
+
+
+    <script src="js/contactFormHandler.js"></script>
+    
+</script>
 
 </body>
 </html>
