@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/client/css/base.css">
+    <link rel="stylesheet" href="/client/css/register.css">
+</head>
+<body>
+    <div class="register-container">
+        <h1>Registro</h1>
+        <form id="registerForm" class="register-form">
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Digite seu nome" required />
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail" required />
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="Digite sua senha" required />
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone" placeholder="Digite seu telefone" />
+            </div>
+            <div class="form-group">
+                <label for="tipo_usuario">Tipo de Usuário</label>
+                <select id="tipo_usuario" required>
+                    <option value="" disabled selected>Selecione o tipo de usuário</option>
+                    <option value="doador">Doador</option>
+                    <option value="adotante">Adotante</option>
+                </select>
+            </div>
+            <button type="submit" class="btn">Registrar</button>
+        </form>
+        <p class="login-link">Já tem uma conta? <a href="login.html">Faça login</a></p>
+    </div>
+
+    
+</body>
+</html>
+<script src="../js/register.js"></script>

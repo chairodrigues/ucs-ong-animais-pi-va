@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONG de Adoção de Animais - Adote & Ame</title>
+    <link rel="stylesheet" href="/client/css/base.css">
+</head>
+<body>
+
+<header>
+    <h1>Bem-vindo à Adote & Ame – Onde o Amor Ganha um Novo Lar!</h1>
+    <p>Adote um amigo para a vida toda</p>
+</header>
+
+<nav>
+    <a href="/client/html/about.html">Sobre Nós</a>
+    <a href="#animals">Animais para Adoção</a>
+    <a href="/client/html/contact.html">Contato</a>
+</nav>
+
+<div class="container">
+    <!-- Seção Sobre Nós -->
+    <section id="about" class="about">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma ONG apaixonada por transformar vidas! Resgatamos animais abandonados e ajudamos a encontrar lares cheios de carinho e segurança para eles. Nosso maior propósito é dar a cada bichinho uma nova chance de ser amado e fazer parte de uma família. Adotar é mudar uma vida - a deles e a sua!</p>
+    </section>
+
+    <!-- Seção Animais para Adoção -->
+    <section id="animals" class="animals">
+        <h2>🐾 Animais para Adoção</h2>
+        <div > 
+        <div class="animal">
+            <img src="/client/images/cachorro.webp" alt="cachorro Rex">
+            <h3>Rex</h3>
+            <p>Idade: 4 meses</p>
+        </div>
+        
+        <div class="animal">
+            <img src="/client/images/gato-albino-scaled.webp" alt="Gato Mia">
+            <h3>Mia</h3>
+            <p>Idade: 7 meses</p>
+        </div>
+        
+        <div class="animal">
+            <img src="/client/images/cachorro2.jpg" alt="Cachorro Thor">
+            <h3>Thor</h3>
+            <p>Idade: 9 meses</p>
+        </div>
+    
+        <div class="animal">
+            <img src="/client/images/gato-persa-branco.webp" alt="Gato Luna">
+            <h3>Luna</h3>
+            <p>Idade: 6 meses</p>
+        </div>
+    
+        <div class="animal">
+            <img src="/client/images/cruzamento-de-pinscher-com-vira-lata-interna-2.jpg" alt="Cachorro Max">
+            <h3>Max</h3>
+            <p>Idade: 1 ano</p>
+        </div>
+    
+        <div class="animal">
+            <img src="/client/images/Vira-lata-caramelo.jpg" alt="Azus">
+            <h3>Bolinha</h3>
+            <p>Idade: 1 ano e meio</p>
+        </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="getGontact" class="getGontact">
+        <h2>💌 Fale Conosco</h2>
+        <p>Tem dúvidas ou quer adotar um amigo de quatro patas? Envie-nos uma mensagem! 🐾</p>
+        
+        <form id="form-contato" class="form-contato">
+            <label for="nome">🐶 Nome:</label>
+            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+        
+            <label for="email">📧 E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Seu melhor e-mail">
+        
+            <label for="telefone">📞 Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx">
+        
+            <label for="mensagem">📝 Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva sua mensagem aqui..."></textarea>
+        
+            <button type="button" id="enviar">📩 Enviar Mensagem</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 ONG de Adoção de Animais. Todos os direitos reservados.</p>
+</footer>
+
+
+    <script src="/client/js/contactFormHandler.js"></script>
+    
+</script>
+
+</body>
+</html>

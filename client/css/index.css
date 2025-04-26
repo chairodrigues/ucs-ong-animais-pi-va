@@ -1,0 +1,28 @@
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.auth-buttons {
+    margin-top: 20px;
+}
+
+.auth-buttons .btn {
+    background-color: #fff;
+    color: #007bff;
+    padding: 10px 15px;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.auth-buttons .btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+    border-color: #0056b3;
+}
